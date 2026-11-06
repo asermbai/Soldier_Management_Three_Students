@@ -1,0 +1,38 @@
+erDiagram
+    ranks ||--o{ soldiers : "holds"
+    units ||--o{ soldiers : "has"
+    soldiers ||--o{ soldier_missions : "serves on"
+    missions ||--o{ soldier_missions : "has"
+
+    ranks {
+        int rank_id PK
+        varchar rank_name UK
+        tinyint rank_level "CHECK 1..6"
+    }
+    units {
+        int unit_id PK
+        varchar unit_name UK
+        varchar unit_location
+    }
+    missions {
+        int mission_id PK
+        varchar mission_name UK
+        date start_date
+        date end_date "NULL = ongoing"
+    }
+    soldiers {
+        int soldier_id PK "AUTO_INCREMENT"
+        varchar service_number UK
+        varchar first_name
+        varchar last_name
+        date date_of_birth
+        date enlistment_date "CHECK > birth"
+        enum status "Active default"
+        int rank_id FK
+        int unit_id FK
+    }
+    soldier_missions {
+        int soldier_id PK, FK
+        int mission_id PK, FK
+        varchar mission_role
+    }
