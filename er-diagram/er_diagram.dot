@@ -1,0 +1,16 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.55", ranksep="0.8", splines=ortho, fontname="Arial", label="Soldier Management — One Shared Database", labelloc=t, fontsize=20];
+  node [shape=plain, fontname="Arial"];
+  edge [fontname="Arial", fontsize=10, color="#475569", arrowsize=0.8];
+  project_students [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dbeafe"><B>project_students</B></TD></TR><TR><TD ALIGN="LEFT">PK student_id</TD></TR><TR><TD ALIGN="LEFT">UK student_number</TD></TR><TR><TD ALIGN="LEFT">display_name</TD></TR></TABLE> >];
+  ranks [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcfce7"><B>ranks</B></TD></TR><TR><TD ALIGN="LEFT">PK rank_id</TD></TR><TR><TD ALIGN="LEFT">UK rank_name</TD></TR><TR><TD ALIGN="LEFT">rank_level</TD></TR></TABLE> >];
+  units [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcfce7"><B>units</B></TD></TR><TR><TD ALIGN="LEFT">PK unit_id</TD></TR><TR><TD ALIGN="LEFT">UK unit_name</TD></TR><TR><TD ALIGN="LEFT">unit_location</TD></TR></TABLE> >];
+  soldiers [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#fef3c7"><B>soldiers</B></TD></TR><TR><TD ALIGN="LEFT">PK soldier_id (global AUTO_INCREMENT)</TD></TR><TR><TD ALIGN="LEFT">UK service_number</TD></TR><TR><TD ALIGN="LEFT">first_name, last_name, dates, status</TD></TR><TR><TD ALIGN="LEFT">FK rank_id, FK unit_id</TD></TR><TR><TD ALIGN="LEFT">FK added_by_student_id (nullable)</TD></TR><TR><TD ALIGN="LEFT">student_record_no (31–33; nullable)</TD></TR></TABLE> >];
+  missions [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcfce7"><B>missions</B></TD></TR><TR><TD ALIGN="LEFT">PK mission_id</TD></TR><TR><TD ALIGN="LEFT">UK mission_name</TD></TR><TR><TD ALIGN="LEFT">start_date, end_date</TD></TR></TABLE> >];
+  soldier_missions [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#fce7f3"><B>soldier_missions</B></TD></TR><TR><TD ALIGN="LEFT">PK/FK soldier_id</TD></TR><TR><TD ALIGN="LEFT">PK/FK mission_id</TD></TR><TR><TD ALIGN="LEFT">mission_role</TD></TR></TABLE> >];
+  project_students -> soldiers [label="1 to many"];
+  ranks -> soldiers [label="1 to many"];
+  units -> soldiers [label="1 to many"];
+  soldiers -> soldier_missions [label="1 to many"];
+  missions -> soldier_missions [label="1 to many"];
+}

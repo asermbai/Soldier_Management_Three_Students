@@ -1,9 +1,15 @@
 erDiagram
+    project_students ||--o{ soldiers : "contributes"
     ranks ||--o{ soldiers : "holds"
-    units ||--o{ soldiers : "has"
+    units ||--o{ soldiers : "assigned to"
     soldiers ||--o{ soldier_missions : "serves on"
-    missions ||--o{ soldier_missions : "has"
+    missions ||--o{ soldier_missions : "includes"
 
+    project_students {
+        tinyint student_id PK
+        varchar student_number UK
+        varchar display_name
+    }
     ranks {
         int rank_id PK
         varchar rank_name UK
@@ -21,7 +27,7 @@ erDiagram
         date end_date "NULL = ongoing"
     }
     soldiers {
-        int soldier_id PK "AUTO_INCREMENT"
+        int soldier_id PK "global AUTO_INCREMENT"
         varchar service_number UK
         varchar first_name
         varchar last_name
@@ -30,6 +36,8 @@ erDiagram
         enum status "Active default"
         int rank_id FK
         int unit_id FK
+        tinyint added_by_student_id FK "NULL for common seed"
+        smallint student_record_no "31, 32 or 33; NULL for common seed"
     }
     soldier_missions {
         int soldier_id PK, FK

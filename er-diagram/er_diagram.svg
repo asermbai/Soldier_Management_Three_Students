@@ -1,1 +1,112 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='1150' height='720' viewBox='0 0 1150 720'><rect width='1150' height='720' fill='#ffffff'/><text x='40' y='36' font-size='22' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>Soldier Management — ER diagram (MySQL 8)</text><rect x='40' y='70' width='280' height='104' rx='6' fill='#ffffff' stroke='#1f3a5f' stroke-width='2'/><rect x='40' y='70' width='280' height='32' rx='6' fill='#1f3a5f'/><rect x='40' y='90' width='280' height='12' fill='#1f3a5f'/><text x='180.0' y='92' text-anchor='middle' fill='#fff' font-size='16' font-weight='bold' font-family='Consolas, Menlo, monospace'>ranks</text><text x='50' y='119' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>PK</text><text x='102' y='119' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>rank_id</text><text x='310' y='119' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT</text><rect x='41' y='126' width='278' height='24' fill='#f1f5fa'/><text x='50' y='143' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>UQ</text><text x='102' y='143' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>rank_name</text><text x='310' y='143' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(50)</text><text x='50' y='167' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>CK</text><text x='102' y='167' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>rank_level</text><text x='310' y='167' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>TINYINT 1..6</text><rect x='40' y='330' width='280' height='104' rx='6' fill='#ffffff' stroke='#1f3a5f' stroke-width='2'/><rect x='40' y='330' width='280' height='32' rx='6' fill='#1f3a5f'/><rect x='40' y='350' width='280' height='12' fill='#1f3a5f'/><text x='180.0' y='352' text-anchor='middle' fill='#fff' font-size='16' font-weight='bold' font-family='Consolas, Menlo, monospace'>units</text><text x='50' y='379' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>PK</text><text x='102' y='379' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>unit_id</text><text x='310' y='379' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT</text><rect x='41' y='386' width='278' height='24' fill='#f1f5fa'/><text x='50' y='403' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>UQ</text><text x='102' y='403' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>unit_name</text><text x='310' y='403' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(80)</text><text x='50' y='427' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='102' y='427' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>unit_location</text><text x='310' y='427' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(80)</text><rect x='420' y='70' width='320' height='248' rx='6' fill='#ffffff' stroke='#1f3a5f' stroke-width='2'/><rect x='420' y='70' width='320' height='32' rx='6' fill='#1f3a5f'/><rect x='420' y='90' width='320' height='12' fill='#1f3a5f'/><text x='580.0' y='92' text-anchor='middle' fill='#fff' font-size='16' font-weight='bold' font-family='Consolas, Menlo, monospace'>soldiers</text><text x='430' y='119' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>PK</text><text x='482' y='119' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>soldier_id</text><text x='730' y='119' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT AUTO_INCREMENT</text><rect x='421' y='126' width='318' height='24' fill='#f1f5fa'/><text x='430' y='143' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>UQ</text><text x='482' y='143' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>service_number</text><text x='730' y='143' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(30)</text><text x='430' y='167' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='482' y='167' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>first_name</text><text x='730' y='167' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(60)</text><rect x='421' y='174' width='318' height='24' fill='#f1f5fa'/><text x='430' y='191' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='482' y='191' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>last_name</text><text x='730' y='191' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(60)</text><text x='430' y='215' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='482' y='215' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>date_of_birth</text><text x='730' y='215' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>DATE</text><rect x='421' y='222' width='318' height='24' fill='#f1f5fa'/><text x='430' y='239' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>CK</text><text x='482' y='239' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>enlistment_date</text><text x='730' y='239' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>DATE > birth</text><text x='430' y='263' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='482' y='263' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>status</text><text x='730' y='263' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>ENUM, default Active</text><rect x='421' y='270' width='318' height='24' fill='#f1f5fa'/><text x='430' y='287' font-size='12' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>FK</text><text x='482' y='287' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>rank_id</text><text x='730' y='287' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT → ranks</text><text x='430' y='311' font-size='12' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>FK</text><text x='482' y='311' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>unit_id</text><text x='730' y='311' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT → units</text><rect x='420' y='520' width='320' height='104' rx='6' fill='#ffffff' stroke='#1f3a5f' stroke-width='2'/><rect x='420' y='520' width='320' height='32' rx='6' fill='#1f3a5f'/><rect x='420' y='540' width='320' height='12' fill='#1f3a5f'/><text x='580.0' y='542' text-anchor='middle' fill='#fff' font-size='16' font-weight='bold' font-family='Consolas, Menlo, monospace'>soldier_missions</text><text x='430' y='569' font-size='12' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>PK,FK</text><text x='482' y='569' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>soldier_id</text><text x='730' y='569' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT → soldiers</text><rect x='421' y='576' width='318' height='24' fill='#f1f5fa'/><text x='430' y='593' font-size='12' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>PK,FK</text><text x='482' y='593' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>mission_id</text><text x='730' y='593' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT → missions</text><text x='430' y='617' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='482' y='617' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>mission_role</text><text x='730' y='617' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(60) NOT NULL</text><rect x='810' y='520' width='300' height='128' rx='6' fill='#ffffff' stroke='#1f3a5f' stroke-width='2'/><rect x='810' y='520' width='300' height='32' rx='6' fill='#1f3a5f'/><rect x='810' y='540' width='300' height='12' fill='#1f3a5f'/><text x='960.0' y='542' text-anchor='middle' fill='#fff' font-size='16' font-weight='bold' font-family='Consolas, Menlo, monospace'>missions</text><text x='820' y='569' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>PK</text><text x='872' y='569' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>mission_id</text><text x='1100' y='569' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>INT</text><rect x='811' y='576' width='298' height='24' fill='#f1f5fa'/><text x='820' y='593' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>UQ</text><text x='872' y='593' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>mission_name</text><text x='1100' y='593' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>VARCHAR(80)</text><text x='820' y='617' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'></text><text x='872' y='617' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>start_date</text><text x='1100' y='617' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>DATE</text><rect x='811' y='624' width='298' height='24' fill='#f1f5fa'/><text x='820' y='641' font-size='12' font-weight='bold' fill='#1f3a5f' font-family='Consolas, Menlo, monospace'>CK</text><text x='872' y='641' font-size='13' fill='#111' font-family='Consolas, Menlo, monospace'>end_date</text><text x='1100' y='641' text-anchor='end' font-size='11' fill='#555' font-family='Consolas, Menlo, monospace'>DATE NULL, >= start</text><polyline points='320,150 420,150' fill='none' stroke='#444' stroke-width='2'/><text x='326' y='142' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>1</text><text x='400' y='142' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>N</text><text x='370' y='170' text-anchor='middle' font-size='12' font-style='italic' fill='#333' font-family='Consolas, Menlo, monospace'>holds</text><polyline points='320,400 370,400 370,306 420,306' fill='none' stroke='#444' stroke-width='2'/><text x='326' y='392' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>1</text><text x='400' y='298' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>N</text><text x='380' y='352' text-anchor='start' font-size='12' font-style='italic' fill='#333' font-family='Consolas, Menlo, monospace'>belongs to</text><polyline points='580,316 580,520' fill='none' stroke='#444' stroke-width='2'/><text x='588' y='336' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>1</text><text x='588' y='512' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>N</text><text x='640' y='430' text-anchor='middle' font-size='12' font-style='italic' fill='#333' font-family='Consolas, Menlo, monospace'>serves on</text><polyline points='810,590 740,590' fill='none' stroke='#444' stroke-width='2'/><text x='790' y='582' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>1</text><text x='748' y='582' font-size='15' font-weight='bold' fill='#b3261e' font-family='Consolas, Menlo, monospace'>N</text><text x='775' y='615' text-anchor='middle' font-size='12' font-style='italic' fill='#333' font-family='Consolas, Menlo, monospace'>has</text><text x='40' y='660' font-size='12' fill='#333' font-family='Consolas, Menlo, monospace'>PK primary key · FK foreign key · UQ unique · CK check constraint · 1 = one side · N = many side</text><text x='40' y='682' font-size='12' fill='#333' font-family='Consolas, Menlo, monospace'>Many-to-many soldiers ↔ missions is resolved by soldier_missions (composite PK = no duplicate soldier on a mission).</text></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.42.4 (0)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="780pt" height="544pt"
+ viewBox="0.00 0.00 780.00 544.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 526)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-18,18 -18,-526 762,-526 762,18 -18,18"/>
+<text text-anchor="middle" x="372" y="-488" font-family="Arial" font-size="20.00">Soldier Management — One Shared Database</text>
+<!-- project_students -->
+<g id="node1" class="node">
+<title>project_students</title>
+<polygon fill="#dbeafe" stroke="transparent" points="1.5,-448 1.5,-477 136.5,-477 136.5,-448 1.5,-448"/>
+<text text-anchor="start" x="14.5" y="-459.8" font-family="Arial" font-weight="bold" font-size="14.00">project_students</text>
+<text text-anchor="start" x="8.5" y="-429.8" font-family="Arial" font-size="14.00">PK student_id</text>
+<text text-anchor="start" x="8.5" y="-400.8" font-family="Arial" font-size="14.00">UK student_number</text>
+<text text-anchor="start" x="8.5" y="-371.8" font-family="Arial" font-size="14.00">display_name</text>
+<polygon fill="none" stroke="black" points="0,-360 0,-478 137,-478 137,-360 0,-360"/>
+</g>
+<!-- soldiers -->
+<g id="node4" class="node">
+<title>soldiers</title>
+<polygon fill="#fef3c7" stroke="transparent" points="240.5,-333 240.5,-362 513.5,-362 513.5,-333 240.5,-333"/>
+<text text-anchor="start" x="351" y="-344.8" font-family="Arial" font-weight="bold" font-size="14.00">soldiers</text>
+<text text-anchor="start" x="247.5" y="-314.8" font-family="Arial" font-size="14.00">PK soldier_id (global AUTO_INCREMENT)</text>
+<text text-anchor="start" x="247.5" y="-285.8" font-family="Arial" font-size="14.00">UK service_number</text>
+<text text-anchor="start" x="247.5" y="-256.8" font-family="Arial" font-size="14.00">first_name, last_name, dates, status</text>
+<text text-anchor="start" x="247.5" y="-227.8" font-family="Arial" font-size="14.00">FK rank_id, FK unit_id</text>
+<text text-anchor="start" x="247.5" y="-198.8" font-family="Arial" font-size="14.00">FK added_by_student_id (nullable)</text>
+<text text-anchor="start" x="247.5" y="-169.8" font-family="Arial" font-size="14.00">student_record_no (31–33; nullable)</text>
+<polygon fill="none" stroke="black" points="239,-158.5 239,-363.5 514,-363.5 514,-158.5 239,-158.5"/>
+</g>
+<!-- project_students&#45;&gt;soldiers -->
+<g id="edge1" class="edge">
+<title>project_students&#45;&gt;soldiers</title>
+<path fill="none" stroke="#475569" d="M130,-359.94C130,-348.51 130,-340 130,-340 130,-340 230.84,-340 230.84,-340"/>
+<polygon fill="#475569" stroke="#475569" points="230.84,-342.8 238.84,-340 230.84,-337.2 230.84,-342.8"/>
+<text text-anchor="middle" x="188" y="-422" font-family="Arial" font-size="10.00">1 to many</text>
+</g>
+<!-- ranks -->
+<g id="node2" class="node">
+<title>ranks</title>
+<polygon fill="#dcfce7" stroke="transparent" points="16.5,-290 16.5,-319 121.5,-319 121.5,-290 16.5,-290"/>
+<text text-anchor="start" x="50.5" y="-301.8" font-family="Arial" font-weight="bold" font-size="14.00">ranks</text>
+<text text-anchor="start" x="23.5" y="-271.8" font-family="Arial" font-size="14.00">PK rank_id</text>
+<text text-anchor="start" x="23.5" y="-242.8" font-family="Arial" font-size="14.00">UK rank_name</text>
+<text text-anchor="start" x="23.5" y="-213.8" font-family="Arial" font-size="14.00">rank_level</text>
+<polygon fill="none" stroke="black" points="15,-202 15,-320 122,-320 122,-202 15,-202"/>
+</g>
+<!-- ranks&#45;&gt;soldiers -->
+<g id="edge2" class="edge">
+<title>ranks&#45;&gt;soldiers</title>
+<path fill="none" stroke="#475569" d="M122.15,-261C122.15,-261 230.77,-261 230.77,-261"/>
+<polygon fill="#475569" stroke="#475569" points="230.77,-263.8 238.77,-261 230.77,-258.2 230.77,-263.8"/>
+<text text-anchor="middle" x="188" y="-264" font-family="Arial" font-size="10.00">1 to many</text>
+</g>
+<!-- units -->
+<g id="node3" class="node">
+<title>units</title>
+<polygon fill="#dcfce7" stroke="transparent" points="18.5,-132 18.5,-161 119.5,-161 119.5,-132 18.5,-132"/>
+<text text-anchor="start" x="52.5" y="-143.8" font-family="Arial" font-weight="bold" font-size="14.00">units</text>
+<text text-anchor="start" x="25.5" y="-113.8" font-family="Arial" font-size="14.00">PK unit_id</text>
+<text text-anchor="start" x="25.5" y="-84.8" font-family="Arial" font-size="14.00">UK unit_name</text>
+<text text-anchor="start" x="25.5" y="-55.8" font-family="Arial" font-size="14.00">unit_location</text>
+<polygon fill="none" stroke="black" points="17,-44 17,-162 120,-162 120,-44 17,-44"/>
+</g>
+<!-- units&#45;&gt;soldiers -->
+<g id="edge3" class="edge">
+<title>units&#45;&gt;soldiers</title>
+<path fill="none" stroke="#475569" d="M120.1,-152.25C180.69,-152.25 273,-152.25 273,-152.25 273,-152.25 273,-152.87 273,-152.87"/>
+<polygon fill="#475569" stroke="#475569" points="270.2,-150.41 273,-158.41 275.8,-150.41 270.2,-150.41"/>
+<text text-anchor="middle" x="188" y="-106" font-family="Arial" font-size="10.00">1 to many</text>
+</g>
+<!-- soldier_missions -->
+<g id="node6" class="node">
+<title>soldier_missions</title>
+<polygon fill="#fce7f3" stroke="transparent" points="617,-116 617,-145 743,-145 743,-116 617,-116"/>
+<text text-anchor="start" x="624" y="-127.8" font-family="Arial" font-weight="bold" font-size="14.00">soldier_missions</text>
+<text text-anchor="start" x="624" y="-97.8" font-family="Arial" font-size="14.00">PK/FK soldier_id</text>
+<text text-anchor="start" x="624" y="-68.8" font-family="Arial" font-size="14.00">PK/FK mission_id</text>
+<text text-anchor="start" x="624" y="-39.8" font-family="Arial" font-size="14.00">mission_role</text>
+<polygon fill="none" stroke="black" points="616,-28 616,-146 744,-146 744,-28 616,-28"/>
+</g>
+<!-- soldiers&#45;&gt;soldier_missions -->
+<g id="edge4" class="edge">
+<title>soldiers&#45;&gt;soldier_missions</title>
+<path fill="none" stroke="#475569" d="M481,-158.42C481,-142.93 481,-132 481,-132 481,-132 607.94,-132 607.94,-132"/>
+<polygon fill="#475569" stroke="#475569" points="607.94,-134.8 615.94,-132 607.94,-129.2 607.94,-134.8"/>
+<text text-anchor="middle" x="565" y="-191" font-family="Arial" font-size="10.00">1 to many</text>
+</g>
+<!-- missions -->
+<g id="node5" class="node">
+<title>missions</title>
+<polygon fill="#dcfce7" stroke="transparent" points="307.5,-88 307.5,-117 445.5,-117 445.5,-88 307.5,-88"/>
+<text text-anchor="start" x="346.5" y="-99.8" font-family="Arial" font-weight="bold" font-size="14.00">missions</text>
+<text text-anchor="start" x="314.5" y="-69.8" font-family="Arial" font-size="14.00">PK mission_id</text>
+<text text-anchor="start" x="314.5" y="-40.8" font-family="Arial" font-size="14.00">UK mission_name</text>
+<text text-anchor="start" x="314.5" y="-11.8" font-family="Arial" font-size="14.00">start_date, end_date</text>
+<polygon fill="none" stroke="black" points="306.5,0 306.5,-118 446.5,-118 446.5,0 306.5,0"/>
+</g>
+<!-- missions&#45;&gt;soldier_missions -->
+<g id="edge5" class="edge">
+<title>missions&#45;&gt;soldier_missions</title>
+<path fill="none" stroke="#475569" d="M446.51,-73C446.51,-73 607.78,-73 607.78,-73"/>
+<polygon fill="#475569" stroke="#475569" points="607.78,-75.8 615.78,-73 607.78,-70.2 607.78,-75.8"/>
+<text text-anchor="middle" x="565" y="-62" font-family="Arial" font-size="10.00">1 to many</text>
+</g>
+</g>
+</svg>
