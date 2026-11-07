@@ -21,9 +21,9 @@ The project uses **one centralized database** so that all three students work wi
 
 This project is prepared collaboratively by:
 
-- **DOURAH**
-- **ANAS**
-- **ATEM**
+- **DOURAH 202512707**
+- **ANAS  202512831**
+- **ATEM 202511479**
 
 All three students use the same database rather than maintaining separate databases.
 
